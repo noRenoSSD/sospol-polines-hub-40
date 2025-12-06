@@ -2,7 +2,8 @@ export const cabinetInfo = {
   name: "Kabinet Lentera Asa",
   ministry: "Kementerian Sosial dan Politik",
   period: "2025/2026",
-  description: "Penggerak roda intelektual di bidang pergerakan, penyikapan, dan pengetahuan politik."
+  tagline: "Penggerak roda intelektual, pengawal isu, dan fasilitator pergerakan mahasiswa Polines.",
+  description: "SosPol bergerak secara vertikal dan holistik untuk mengembangkan pemikiran kritis dan kesadaran politik mahasiswa."
 };
 
 export const teamMembers = [
@@ -10,19 +11,50 @@ export const teamMembers = [
     id: 1,
     name: "Athaya Pandu Mareno",
     role: "Menteri",
-    image: "/images/athaya.jpg"
+    image: "/images/athaya.jpg",
+    level: 1
   },
   {
     id: 2,
     name: "Muhammad Raihan Bintang R.",
     role: "Wakil Menteri",
-    image: "/images/raihan.jpg"
+    image: "/images/raihan.jpg",
+    level: 1
   },
   {
     id: 3,
     name: "Revanza Dhimas Erudita",
     role: "Menko Relasi dan Pergerakan",
-    image: "/images/revanza.jpg"
+    image: "/images/revanza.jpg",
+    level: 2
+  },
+  {
+    id: 4,
+    name: "Staff Kajian Isu",
+    role: "Deputi Kajian Isu",
+    image: "/placeholder.svg",
+    level: 3
+  },
+  {
+    id: 5,
+    name: "Staff Propaganda",
+    role: "Deputi Propaganda",
+    image: "/placeholder.svg",
+    level: 3
+  },
+  {
+    id: 6,
+    name: "Staff Aksi",
+    role: "Deputi Aksi",
+    image: "/placeholder.svg",
+    level: 3
+  },
+  {
+    id: 7,
+    name: "Staff Forum Perempuan",
+    role: "Deputi Forum Perempuan",
+    image: "/placeholder.svg",
+    level: 3
   }
 ];
 
@@ -31,16 +63,16 @@ export const programs = [
     id: 1,
     title: "Serikat Sospol",
     category: "Event Besar",
-    description: "Event perpaduan seni, intelektual, dan budaya populer dengan tema 'Laut Bercerita'.",
+    description: "Event perpaduan seni, seminar, dan diskusi dengan tema 'Membedah Krisis, Menjelajahi Harapan' (Laut Bercerita).",
     date: "24-25 April 2026",
-    status: "Upcoming",
+    status: "Highlight",
     icon: "Sparkles"
   },
   {
     id: 2,
     title: "Forum Perempuan",
     category: "Sosial & Advokasi",
-    description: "Wadah edukasi keperempuanan dan kerjasama dengan Satgas PPKS untuk aduan kekerasan seksual.",
+    description: "Wadah edukasi keperempuanan dan kerjasama dengan Satgas PPKS untuk advokasi kekerasan seksual.",
     date: "Bulanan",
     status: "Active",
     icon: "Heart"
@@ -58,10 +90,40 @@ export const programs = [
     id: 4,
     title: "Propaganda Kreatif",
     category: "Media",
-    description: "Edukasi politik dan pengawalan isu melalui konten visual di Instagram @sospol.bempolines.",
+    description: "Edukasi politik kritis melalui konten visual di Instagram @sospol.bempolines.",
     date: "Rutin",
     status: "Active",
     icon: "Megaphone"
+  },
+  {
+    id: 5,
+    title: "Nobar & Diskusi",
+    category: "Edukasi",
+    description: "Nonton bareng film bertema sosial-politik dilanjutkan diskusi kritis.",
+    date: "Periodik",
+    status: "Active",
+    icon: "Film"
+  }
+];
+
+export const roleCards = [
+  {
+    id: 1,
+    title: "Kajian Isu",
+    description: "Penelitian dan analisis mendalam terhadap isu strategis kampus dan nasional.",
+    icon: "Search"
+  },
+  {
+    id: 2,
+    title: "Aksi Pergerakan",
+    description: "Mengorganisir aksi advokasi untuk menyuarakan aspirasi mahasiswa.",
+    icon: "Megaphone"
+  },
+  {
+    id: 3,
+    title: "Forum Perempuan",
+    description: "Wadah edukasi dan advokasi isu keperempuanan serta pencegahan kekerasan seksual.",
+    icon: "Heart"
   }
 ];
 
@@ -72,6 +134,7 @@ export const articles = [
     date: "2024-12-01",
     summary: "Kajian mendalam mengenai pentingnya transparansi dalam pengelolaan dana kemahasiswaan untuk meningkatkan kepercayaan dan akuntabilitas.",
     category: "Kajian",
+    tags: ["Politik", "Kampus"]
   },
   {
     id: 2,
@@ -79,6 +142,7 @@ export const articles = [
     date: "2024-11-28",
     summary: "Pernyataan resmi Kementerian SosPol menanggapi wacana kenaikan Uang Kuliah Tunggal tahun akademik mendatang.",
     category: "Press Release",
+    tags: ["Politik", "Kampus"]
   },
   {
     id: 3,
@@ -86,13 +150,15 @@ export const articles = [
     date: "2024-11-20",
     summary: "Laporan hasil survei yang melibatkan 500+ responden mahasiswa Polines tentang kondisi fasilitas kampus.",
     category: "Kajian",
+    tags: ["Sosial", "Kampus"]
   },
   {
     id: 4,
-    title: "Rekap Diskusi Publik: Peran Mahasiswa dalam Demokrasi",
+    title: "Forum Perempuan: Edukasi Consent dan Batasan",
     date: "2024-11-15",
-    summary: "Ringkasan hasil diskusi publik yang membahas bagaimana mahasiswa dapat berperan aktif dalam proses demokrasi.",
+    summary: "Rangkuman diskusi Forum Perempuan tentang pentingnya pemahaman consent dalam relasi.",
     category: "Kegiatan",
+    tags: ["Perempuan", "Sosial"]
   },
 ];
 
@@ -104,3 +170,9 @@ export const navLinks = [
   { href: "#tim", label: "Tim" },
   { href: "#kontak", label: "Kontak" },
 ];
+
+export const socialLinks = {
+  instagram: "https://instagram.com/sospol.bempolines",
+  email: "sospol@bempolines.id",
+  whatsapp: "+6281234567890"
+};
