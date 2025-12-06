@@ -166,6 +166,7 @@ export const navLinks = [
   { href: "#beranda", label: "Beranda" },
   { href: "#tentang", label: "Tentang" },
   { href: "#program", label: "Program" },
+  { href: "#dokumentasi", label: "Dokumentasi" },
   { href: "#kajian", label: "Kajian" },
   { href: "#tim", label: "Tim" },
   { href: "#kontak", label: "Kontak" },
@@ -176,3 +177,46 @@ export const socialLinks = {
   email: "sospol@bempolines.id",
   whatsapp: "+6281234567890"
 };
+
+export const eventDocumentation = [
+  {
+    id: 1,
+    title: "Serikat Sospol 2024",
+    date: "25-26 April 2024",
+    description: "Event besar tahunan dengan tema 'Merajut Asa di Tengah Krisis'. Dihadiri 500+ peserta dari berbagai kampus.",
+    images: ["/placeholder.svg", "/placeholder.svg", "/placeholder.svg"],
+    category: "Event Besar",
+    attendees: 500,
+    location: "Auditorium Polines"
+  },
+  {
+    id: 2,
+    title: "Diskusi Publik: Demokrasi Kampus",
+    date: "15 Maret 2024",
+    description: "Diskusi terbuka membahas isu demokrasi di lingkungan kampus bersama akademisi dan aktivis.",
+    images: ["/placeholder.svg", "/placeholder.svg"],
+    category: "Diskusi",
+    attendees: 150,
+    location: "Ruang Seminar Lt. 3"
+  },
+  {
+    id: 3,
+    title: "Forum Perempuan: Edukasi Consent",
+    date: "8 Maret 2024",
+    description: "Workshop edukasi tentang consent dan pencegahan kekerasan seksual bersama Satgas PPKS.",
+    images: ["/placeholder.svg", "/placeholder.svg"],
+    category: "Workshop",
+    attendees: 80,
+    location: "Aula Gedung A"
+  },
+  {
+    id: 4,
+    title: "Nobar Film 'Jagat Arwah'",
+    date: "20 Februari 2024",
+    description: "Nonton bareng film dokumenter dan diskusi tentang isu sosial-politik.",
+    images: ["/placeholder.svg"],
+    category: "Nobar",
+    attendees: 60,
+    location: "Ruang Audio Visual"
+  }
+];
