@@ -15,6 +15,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Plus Jakarta Sans", "system-ui", "sans-serif"],
+        display: ["Playfair Display", "serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -54,8 +55,8 @@ export default {
           dark: "hsl(var(--navy-dark))",
           light: "hsl(var(--navy-light))",
         },
-        orange: {
-          glow: "hsl(var(--orange-glow))",
+        gold: {
+          glow: "hsl(var(--gold-glow))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
