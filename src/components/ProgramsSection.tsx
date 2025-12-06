@@ -1,20 +1,17 @@
 import { 
-  MessageSquare, 
-  GraduationCap, 
-  Megaphone, 
-  FileSearch, 
+  Sparkles, 
   Heart, 
-  Newspaper 
+  Handshake, 
+  Megaphone 
 } from "lucide-react";
 import { programs } from "@/data/siteData";
+import { Badge } from "@/components/ui/badge";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
-  MessageSquare,
-  GraduationCap,
-  Megaphone,
-  FileSearch,
+  Sparkles,
   Heart,
-  Newspaper,
+  Handshake,
+  Megaphone,
 };
 
 const ProgramsSection = () => {
@@ -34,7 +31,7 @@ const ProgramsSection = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 gap-6">
           {programs.map((program, index) => {
             const IconComponent = iconMap[program.icon];
             return (
@@ -43,17 +40,31 @@ const ProgramsSection = () => {
                 className="group p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 hover:-translate-y-1"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="w-12 h-12 rounded-xl bg-accent/20 flex items-center justify-center mb-5 group-hover:bg-accent/30 transition-colors">
-                  {IconComponent && (
-                    <IconComponent className="w-6 h-6 text-accent" />
-                  )}
+                <div className="flex items-start justify-between mb-4">
+                  <div className="w-12 h-12 rounded-xl bg-accent/20 flex items-center justify-center group-hover:bg-accent/30 transition-colors">
+                    {IconComponent && (
+                      <IconComponent className="w-6 h-6 text-accent" />
+                    )}
+                  </div>
+                  <Badge 
+                    variant={program.status === "Upcoming" ? "default" : "secondary"}
+                    className={program.status === "Upcoming" ? "bg-accent text-white" : "bg-white/20 text-white"}
+                  >
+                    {program.status}
+                  </Badge>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">
+                <span className="text-xs text-accent font-medium uppercase tracking-wider">
+                  {program.category}
+                </span>
+                <h3 className="text-xl font-bold text-white mt-1 mb-3">
                   {program.title}
                 </h3>
-                <p className="text-white/60 leading-relaxed">
+                <p className="text-white/60 leading-relaxed mb-4">
                   {program.description}
                 </p>
+                <div className="text-sm text-white/50">
+                  📅 {program.date}
+                </div>
               </div>
             );
           })}

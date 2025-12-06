@@ -1,40 +1,68 @@
-export const programs = [
+export const cabinetInfo = {
+  name: "Kabinet Lentera Asa",
+  ministry: "Kementerian Sosial dan Politik",
+  period: "2025/2026",
+  description: "Penggerak roda intelektual di bidang pergerakan, penyikapan, dan pengetahuan politik."
+};
+
+export const teamMembers = [
   {
     id: 1,
-    title: "Diskusi Publik",
-    description: "Forum diskusi terbuka membahas isu-isu strategis yang mempengaruhi kehidupan mahasiswa dan masyarakat.",
-    icon: "MessageSquare",
+    name: "Athaya Pandu Mareno",
+    role: "Menteri",
+    image: "/images/athaya.jpg"
   },
   {
     id: 2,
-    title: "Sekolah Politik",
-    description: "Program edukasi politik untuk meningkatkan kesadaran dan partisipasi politik mahasiswa.",
-    icon: "GraduationCap",
+    name: "Muhammad Raihan Bintang R.",
+    role: "Wakil Menteri",
+    image: "/images/raihan.jpg"
   },
   {
     id: 3,
-    title: "Polines Menggugat",
-    description: "Aksi advokasi untuk menyuarakan aspirasi dan hak-hak mahasiswa Polines.",
-    icon: "Megaphone",
+    name: "Revanza Dhimas Erudita",
+    role: "Menko Relasi dan Pergerakan",
+    image: "/images/revanza.jpg"
+  }
+];
+
+export const programs = [
+  {
+    id: 1,
+    title: "Serikat Sospol",
+    category: "Event Besar",
+    description: "Event perpaduan seni, intelektual, dan budaya populer dengan tema 'Laut Bercerita'.",
+    date: "24-25 April 2026",
+    status: "Upcoming",
+    icon: "Sparkles"
+  },
+  {
+    id: 2,
+    title: "Forum Perempuan",
+    category: "Sosial & Advokasi",
+    description: "Wadah edukasi keperempuanan dan kerjasama dengan Satgas PPKS untuk aduan kekerasan seksual.",
+    date: "Bulanan",
+    status: "Active",
+    icon: "Heart"
+  },
+  {
+    id: 3,
+    title: "Sambang Sospol",
+    category: "Diplomasi",
+    description: "Kunjungan kerja ke HMJ Internal Polines dan BEM Eksternal untuk mempererat relasi.",
+    date: "2x per Periode",
+    status: "Active",
+    icon: "Handshake"
   },
   {
     id: 4,
-    title: "Kajian Kebijakan",
-    description: "Penelitian dan analisis mendalam terhadap kebijakan kampus dan pemerintah.",
-    icon: "FileSearch",
-  },
-  {
-    id: 5,
-    title: "Solidaritas Sosial",
-    description: "Gerakan kepedulian sosial dan bantuan untuk masyarakat yang membutuhkan.",
-    icon: "Heart",
-  },
-  {
-    id: 6,
-    title: "Media & Publikasi",
-    description: "Penyebaran informasi dan edukasi melalui berbagai platform media.",
-    icon: "Newspaper",
-  },
+    title: "Propaganda Kreatif",
+    category: "Media",
+    description: "Edukasi politik dan pengawalan isu melalui konten visual di Instagram @sospol.bempolines.",
+    date: "Rutin",
+    status: "Active",
+    icon: "Megaphone"
+  }
 ];
 
 export const articles = [
@@ -65,45 +93,6 @@ export const articles = [
     date: "2024-11-15",
     summary: "Ringkasan hasil diskusi publik yang membahas bagaimana mahasiswa dapat berperan aktif dalam proses demokrasi.",
     category: "Kegiatan",
-  },
-];
-
-export const teamMembers = [
-  {
-    id: 1,
-    name: "Ahmad Rizky",
-    role: "Menteri SosPol",
-    image: "/placeholder.svg",
-  },
-  {
-    id: 2,
-    name: "Siti Nurhaliza",
-    role: "Wakil Menteri",
-    image: "/placeholder.svg",
-  },
-  {
-    id: 3,
-    name: "Budi Santoso",
-    role: "Kepala Bidang Advokasi",
-    image: "/placeholder.svg",
-  },
-  {
-    id: 4,
-    name: "Dewi Anggraini",
-    role: "Kepala Bidang Kajian",
-    image: "/placeholder.svg",
-  },
-  {
-    id: 5,
-    name: "Fajar Pratama",
-    role: "Kepala Bidang Media",
-    image: "/placeholder.svg",
-  },
-  {
-    id: 6,
-    name: "Putri Rahayu",
-    role: "Sekretaris",
-    image: "/placeholder.svg",
   },
 ];
 
